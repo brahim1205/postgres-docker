@@ -4,6 +4,6 @@ ENV POSTGRES_USER=admin
 ENV POSTGRES_PASSWORD=adminpass
 ENV POSTGRES_DB=mydb
 
-COPY init/*.sql /docker-entrypoint-initdb.d/   # ✅ Scripts d'init
+COPY init/*.sql /docker-entrypoint-initdb.d/   
 
 EXPOSE 5432
